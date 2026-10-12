@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>тогуз коргоол</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <button id="leave" type="button" hidden>выйти</button>
+
+  <main id="home">
+    <h1>тогуз коргоол</h1>
+    <form id="make">
+      <input id="name" maxlength="16" placeholder="имя" autocomplete="nickname" enterkeyhint="done">
+      <button type="submit">создать лобби</button>
+    </form>
+    <form id="enter">
+      <input id="code" inputmode="numeric" maxlength="4" placeholder="код лобби" autocomplete="off" enterkeyhint="go">
+    </form>
+    <p id="home-msg" class="msg"></p>
+    <div id="rooms"></div>
+  </main>
+
+  <main id="wait" hidden>
+    <p class="eyebrow">лобби</p>
+    <button id="copy" class="code" type="button"></button>
+    <p id="wait-msg" class="quiet">жди соперника</p>
+  </main>
+
+  <main id="table" hidden>
+    <p id="status"></p>
+    <section id="board">
+      <div class="side opp">
+        <p class="who" id="opp-name"></p>
+        <div class="kazan" id="kazan-opp"><span>0</span></div>
+      </div>
+      <div class="rows">
+        <div class="row" id="row-opp"></div>
+        <div class="row" id="row-you"></div>
+      </div>
+      <div class="side you">
+        <p class="who" id="you-name"></p>
+        <div class="kazan" id="kazan-you"><span>0</span></div>
+      </div>
+    </section>
+    <button id="next" type="button" hidden>ещё</button>
+  </main>
+
+  <i id="bead" hidden></i>
+  <script src="/client.js" type="module"></script>
+</body>
+</html>

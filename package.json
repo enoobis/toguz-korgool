@@ -1,0 +1,12 @@
+{
+  "name": "toguz-korgool",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test game.test.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
